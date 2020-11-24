@@ -1,0 +1,1 @@
+Creating the classic game "Rock Paper Scissors" in Javascript. This will be played from the browser console.
