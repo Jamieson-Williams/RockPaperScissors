@@ -6,46 +6,6 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script>
-        // Create a function that randomly selects rock, paper or scissors (This is the computers move)
-        function computerPlay() {
-            choices = ['rock', 'paper', 'scissors']
-            compchoice = Math.floor(Math.random() * choices.length);
-            return choices[compchoice]
-        }
-
-        // Prompt user to choose rock, paper or scissors. Display user and computer choice
-        let playerSelection = "Rock"
-        console.log('You selected', playerSelection)
-        let computerSelection = computerPlay()
-        console.log('Computer selected',computerSelection)
-
-        // Evaluate the users choice against the randomly selected choice
-        playerSelection = playerSelection.toLowerCase()
-        computerSelection = computerSelection.toLowerCase()
-
-        function playRound(playerSelection, computerSelection) {
-            if (playerSelection === "rock" && computerSelection === "paper") {
-                return "You lose. Paper beats rock"
-            } else if (playerSelection === "rock" && computerSelection === "scissors") {
-                return "You win. Rock beats scissors"
-            } else if (playerSelection === "paper" && computerSelection === "rock") {
-                return "You win. Paper beats rock"
-            } else if (playerSelection === "paper" && computerSelection === "scissors") {
-                return "You lose. Scissors beats paper"
-            } else if (playerSelection === "scissors" && computerSelection === "rock") {
-                return "You lose. Rock beats scissors"
-            } else if (playerSelection === "scissors" && computerSelection === "paper") {
-                return "You win. Scissors beats paper"
-            } else {
-                return "It's a draw. You both selected the same choice"
-            } 
-        }
-        // Announce winner
-        console.log(playRound(playerSelection,computerSelection))
-            
-        
-        // Use function game() to keep score of 5 rounds and report winner or loser at the end
-    </script>
+    <script src="play.js"></script>
 </body>
 </html>
